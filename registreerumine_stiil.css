@@ -1,0 +1,68 @@
+/* google fonti import testimiseks */
+
+@import url('https://fonts.googleapis.com/css2?family=Anek+Gujarati:wght@200&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Anek Gujarati", sans-serif;
+}
+
+body{
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: #4070f4;
+}
+
+.container{
+    background-color: #ffff;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 15 px;
+    position: relative;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+}
+
+.container header{
+    position: relative;
+    font-size: 20 px;
+    font-weight: 600;
+    color: #333;
+
+}
+
+.container header::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 5px;
+    width: 27px;
+    border-radius: 8px;
+    background-color: #4070f4;
+
+}
+
+.container form{
+    position: relative;
+    min-height: 490px;
+    background-color: #fff;
+
+}
+.container form .title{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: #333;
+    
+}
+
+.container form .details{
+    margin-top: 10px;
+}
