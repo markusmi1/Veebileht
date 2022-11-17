@@ -30,7 +30,7 @@ body{
 }
 
 .container header{
-    position: relative;
+    position:relative;
     font-size: 20 px;
     font-weight: 600;
     color: #333;
@@ -65,4 +65,12 @@ body{
 
 .container form .details{
     margin-top: 10px;
+}
+
+.container form .fields{
+    align-items:center;
+    display: block;
+    align-items: center;
+    
+    justify-content:space-between;
 }
