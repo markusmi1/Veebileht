@@ -17,9 +17,12 @@ body {
 #navbar {
   overflow: hidden;
   background-color: #333;
+  
 }
+
 #navbar a {
   float: left;
+  width: 17.43%;
   display: block;
   color: #f2f2f2;
   text-align: center;
@@ -27,13 +30,19 @@ body {
   text-decoration: none;
   font-size: 17px;
 }
+
 #navbar a:hover {
   background-color: #ddd;
   color: black;
 }
+
 #navbar a.active {
-  background-color: #0574be;
+  background-color: #086cbd;
   color: white;
+}
+
+.content {
+  padding: 16px;
 }
 
 .sticky {
@@ -41,6 +50,7 @@ body {
   top: 0;
   width: 100%;
 }
+
 .sticky + .content {
   padding-top: 60px;
 }
@@ -53,70 +63,19 @@ body {
   box-sizing: border-box;
   height: 300px;
 }
-.left{
-  width: 33%;
-  background-image: url("https://expertreviews.b-cdn.net/sites/expertreviews/files/styles/er_main_wide/public/2021/07/best_tennis_racquet_lead_image.jpg?itok=IIDS5d5F");
+.esimene_rida{
   background-size: cover;
-  border-radius: 20% 0% 0% 40%;
+  border-radius: 50%;
 }
-.right{
-  width: 33%;
-  background-color: beige;
-  background-image: url("https://img.olympicchannel.com/images/image/private/t_16-9_360-203_2x/f_auto/v1538355600/primary/ukd65qjkwidtzhxvauqp");
-  background-size: cover;
-  border-radius: 0% 40% 20% 0%;
-}
-.middle{
-  width: 34%;
-  background-color: aquamarine;
-  background-image: url("https://cdn.runningshoesguru.com/wp-content/uploads/2020/06/running-shoes-faq-1110x650.jpg");
-  background-size: cover;
-}
-h2{
-  text-align: center;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.card {
-  box-shadow: 0 4px 8px 0 rgba(226, 17, 17, 1);
-  text-align: center;
-  background-color: #f1f1f1;
-}
+
 .tennis{
-  width: auto;
-  padding: 9px;
-  border-radius: 70px 30px 30px 100px;
+  background-image: url("https://expertreviews.b-cdn.net/sites/expertreviews/files/styles/er_main_wide/public/2021/07/best_tennis_racquet_lead_image.jpg?itok=IIDS5d5F");
+  width: 33%;
   background-size: cover;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
 
-.hüpe{
-  border-radius: 0% 40% 20% 0%;
-}
-.jooks{
-  border-radius: 20% 20% 20% 20%;
-}
-.collapsible {
-  background-color: #000;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
-.content {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  transition: maxHeight 0.2s ease-out;
-  background-color: #777;
-}
-.active, .collapsible:hover {
-  background-color: #ccc;
-}
+
