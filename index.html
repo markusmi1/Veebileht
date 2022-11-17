@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./avaleht.css"/>
+	<title>Tartu spordipäev 2022</title>
+
+</head>
+<body>
+	<div class="sisu">
+
+	<h1>TARTU SPORDIPÄEV <span class="värviline"><div id="aasta"></div></span> </h1>
+	<p>Terves kehas terve vaim. <i>Mens sana in corpore sano</i>.</p>
+	<h2>Registreeri <a href="./teineleht.html" target="_blank">siin</a> </h2>
+	<br />
+	<img src="./Mens-sana-in-corpore-sano-pilt.png" alt="Mens sana in corpore sano"/>
+    
+
+	<h2>Mis on Tartu Spordipäev?</h2>
+    <p>See on tervisesporti populariseeriv rahvaüritus, kus saab tegeleda erinevate spordialadega.</p>
+    <h2>Kellele?</h2> 
+    <p>Kogu perekond saab kaasatud ja tegevusi jätkub kõigile. </p>
+    <h2>Kus?</h2>
+    <p>Üritused toimuvad Tartu kesklinnas terve päeva jooksul. </p>
+    <h2>Millal?</h2>
+    <p>Spordipäev leiab aset novembri viimasel laupäeval.</p>
+	<h2>Spordialade tutvustusi vaata <a href="./kolmasleht.html" > siit</a></h2>
+	<div class="kontaktid">
+		<h3 class = "pealkiri">Kontaktid:</h3>
+		<br />
+		<ul class="numbrid">
+			<li>Jaan Jalgratas - tel. 51234567</li>
+			<li>Tõnu Tennis - tel. 57654321</li>
+			<li>Marta Maadlus - tel. 54536271</li>
+		</ul>
+	</div>
+    <br />
+
+    
+    <script>
+		const see_aasta = `${new Date().getFullYear()}`;
+  
+		document.getElementById('aasta').innerHTML = see_aasta;
+	</script>
+	</div>
+</body>
+</html>
