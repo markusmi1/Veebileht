@@ -23,14 +23,34 @@
     </div>
 
     <!-- navbar-->
-
     <div id="navbar">
+        <a href="./index.html" href="javascript:void(0)">Avaleht</a>
+        <a href="./kolmasleht.html">Võistlused</a>
+        <div class="dropdown">
+          <button class="dropbtn" href="javascript:void(0)">Alad
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div id="dropdown-content">
+            <a href="#tennis" href="javascript:void(0)">Tennis</a>
+            <a href="#jooks" href="javascript:void(0)">Jooks</a>
+            <a href="#ratas" href="javascript:void(0)">Rattasõit</a>
+            <a href="#ujumine" href="javascript:void(0)">Ujumine</a>
+            <a href="#hüpe" href="javascript:void(0)">Kaugushüpe</a>
+          </div>
+        </div>
+        <a class="active" href="./teineleht.html" href="javascript:void(0)">Registreeri</a>
+        <a href="#kontakt">Kontaktid</a>
+    </div>
+
+
+
+   <!--<div id="navbar">
         <a href="./index.html">Avaleht</a>
         <a href="javascript:void(0)">Tennis</a>
         <a href="javascript:void(0)">10km jooks</a>
         <a href="javascript:void(0)">Kaugushüpe</a>
         <a class= "active"href="./teineleht.html" >Registreeri</a>
-    </div>
+    </div>  -->
 
     <!-- registreerimisvorm-->
     <div class = "container">
@@ -55,6 +75,7 @@
                 </form>
         </div>
     </div>
+
     <!-- footer-->
     <div class="footer" id="kontakt">
         <div class="row footri_rida">
@@ -82,7 +103,10 @@
       </div>
 
     </body>
-    <!--<script>
+
+
+    <!-- ajutine script kuni üldjava.js korda saab-->
+    <script>
         window.onscroll = function() {myFunction()};
         
         var navbar = document.getElementById("navbar");
@@ -95,7 +119,7 @@
             navbar.classList.remove("sticky");
           }
         }
-    </script>-->
+    </script>
 </html>
 
 

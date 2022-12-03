@@ -24,7 +24,7 @@
     background-color: rgb(102, 141, 141);
     border-radius: 5px;
     text-align: left;
-    font-family: 'Times New Roman', Times, serif;
+    /*font-family: 'Times New Roman', Times, serif;*/
     font-size: 30px;
     margin-top: 10px;
     margin-left: 10px;
@@ -48,7 +48,7 @@
     display: block;
     margin: auto;
     padding: 12px 20px;
-    font-family: 'Times New Roman', Times, serif;
+    /*font-family: 'Times New Roman', Times, serif;*/
 }
 .container .formscontent label{
     border: 1px solid black;
@@ -56,7 +56,7 @@
     background-color: rgb(102, 141, 141);
     font-weight: 500;
     font-size: 25px;
-    font-family: 'Times New Roman', Times, serif;
+    /*font-family: 'Times New Roman', Times, serif;*/
 
 }
 .container .formscontent input[type=submit]{
