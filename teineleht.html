@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="et">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +8,10 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="teineleht stiil.css">
+        <link rel="stylesheet" href="teineleht_stiil.css">
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
         <link rel="stylesheet" href="üldstiil.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
-        <title>Registreerumine</title>
     </head>
 
 
@@ -24,21 +22,21 @@
 
     <!-- navbar-->
     <div id="navbar">
-        <a href="./index.html" href="javascript:void(0)">Avaleht</a>
+        <a href="./index.html">Avaleht</a>
         <a href="./kolmasleht.html">Võistlused</a>
         <div class="dropdown">
-          <button class="dropbtn" href="javascript:void(0)">Alad
+          <button class="dropbtn">Alad
             <i class="fa fa-caret-down"></i>
           </button>
           <div id="dropdown-content">
-            <a href="#tennis" href="javascript:void(0)">Tennis</a>
-            <a href="#jooks" href="javascript:void(0)">Jooks</a>
-            <a href="#ratas" href="javascript:void(0)">Rattasõit</a>
-            <a href="#ujumine" href="javascript:void(0)">Ujumine</a>
-            <a href="#hüpe" href="javascript:void(0)">Kaugushüpe</a>
+            <a href="#tennis">Tennis</a>
+            <a href="#jooks">Jooks</a>
+            <a href="#ratas">Rattasõit</a>
+            <a href="#ujumine">Ujumine</a>
+            <a href="#hüpe">Kaugushüpe</a>
           </div>
         </div>
-        <a class="active" href="./teineleht.html" href="javascript:void(0)">Registreeri</a>
+        <a class="active" href="./teineleht.html">Registreeri</a>
         <a href="#kontakt">Kontaktid</a>
     </div>
 
@@ -65,12 +63,12 @@
                     <input type="email" id="Email" placeholder="e-mail" required><br>
 
                     <label for="ala">Vali ala kuhu soovid registreeruda:</label>
-                    <select name="alad" id="ala" required>
+                    <select name="alad" id="ala" required size="3">
                         <option value="tennis">Tennis</option>
                         <option value="10km jooks">10km jooks</option>
                         <option value="kaugushüpe">Kaugushüpe</option>
                     </select>
-                    <input type="submit"value = "Saada avaldus">
+                    <input type="submit" value = "Saada avaldus">
                     </div>
                 </form>
         </div>
@@ -95,7 +93,7 @@
           </div>
           <div class="column social">
             <h4>Sotsiaalmeedia:</h4>
-            <a href="https://et-ee.facebook.com/" target="_blank"><i href="#https://et-ee.facebook.com/" class="fa fa-facebook"></i></a>
+            <a href="https://et-ee.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
             <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
             <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
           </div>
@@ -105,20 +103,19 @@
     </body>
 
 
-    <!-- ajutine script kuni üldjava.js korda saab-->
     <script>
-        window.onscroll = function() {myFunction()};
-        
-        var navbar = document.getElementById("navbar");
-        var sticky = navbar.offsetTop;
-        
-        function myFunction() {
-          if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-          } else {
-            navbar.classList.remove("sticky");
-          }
+    window.onscroll = function() {myFunction()};
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+        } else {
+        navbar.classList.remove("sticky");
         }
+    }
     </script>
 </html>
 
