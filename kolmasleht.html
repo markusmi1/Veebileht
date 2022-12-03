@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="et">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,28 +9,27 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="kolmasleht_stiil.css">
         <link rel="stylesheet" href="üldstiil.css">
-        <link rel="stylesheet" href="üldjava"> 
     </head>
 <body>
     <div class="header">
         <h1 id="tennis">Tartu Spordipäevad</h1>
     </div>
     <div id="navbar">
-        <a href="./index.html" href="javascript:void(0)">Avaleht</a>
+        <a href="./index.html">Avaleht</a>
         <a class="active" href="javascript:void(0)">Võistlused</a>
         <div class="dropdown">
-          <button class="dropbtn" href="javascript:void(0)">Alad
+          <button class="dropbtn">Alad
             <i class="fa fa-caret-down"></i>
           </button>
           <div id="dropdown-content">
-            <a href="#tennis" href="javascript:void(0)">Tennis</a>
-            <a href="#jooks" href="javascript:void(0)">Jooks</a>
-            <a href="#ratas" href="javascript:void(0)">Rattasõit</a>
-            <a href="#ujumine" href="javascript:void(0)">Ujumine</a>
-            <a href="#hüpe" href="javascript:void(0)">Kaugushüpe</a>
+            <a href="#tennis">Tennis</a>
+            <a href="#jooks" >Jooks</a>
+            <a href="#ratas">Rattasõit</a>
+            <a href="#ujumine" >Ujumine</a>
+            <a href="#hüpe" >Kaugushüpe</a>
           </div>
         </div>
-        <a href="./teineleht.html" href="javascript:void(0)">Registreeri</a>
+        <a href="./teineleht.html">Registreeri</a>
         <a href="#kontakt">Kontaktid</a>
     </div>
 
@@ -84,7 +83,7 @@
         <br>
         <h2>Ujumine</h2>
         <div class="card cujumine">
-          <p  id="hüpe">Ujumisstiile on küll olemas mitmeid, kuid võisteldakse, vaid 
+          <p id="hüpe">Ujumisstiile on küll olemas mitmeid, kuid võisteldakse, vaid 
             neljas erinevas ja neid kombineerivas kompleksis. Võistlus stiilid on: 
             liblik-, selili-, rinnuli- ja vabaujumine. Sellel korral võisteldakse 
             kompleksujumises ehk läbitakse 400m distants 100 meetristes vahemikes. 
@@ -132,12 +131,25 @@
         </div>
         <div class="column social">
           <h4>Sotsiaalmeedia:</h4>
-          <a href="https://et-ee.facebook.com/" target="_blank"><i href="#https://et-ee.facebook.com/" class="fa fa-facebook"></i></a>
+          <a href="https://et-ee.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
           <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
           <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
         </div>
       </div>
     </div>  
-
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+</script>
 </body>
 </html>
