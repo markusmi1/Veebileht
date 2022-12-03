@@ -7,50 +7,68 @@
         <title>Registreerumine</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <link rel="stylesheet" href="teineleht stiil.css">
-
-
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <link rel="stylesheet" href="üldstiil.css">
         
         <title>Registreerumine</title>
-
-
     </head>
+
+
     <body>
-        <div class = "container">
-            <header>Registreerumine üritusele</header>
-            
-            <form action ="#">
-                <div class = "form first">
-                    <div class="details personal">
-                        <span class="title">Personaalne info</span>
-                        
-                        <div class="fields">
-                            <div class = "input field">
-                                <label>Ees ja perekonnanimi</label>
-                                <input type="text" placeholder = "nimi siia..." required>
-                            </div>
-                            <div class = "input field">
-                                <label>E-mail</label>
-                                <input type="text" placeholder = "E-mail siia..." required>
-                            </div>
-                            <div class = "input field">
-                                <label>Mis ala?</label>
-                                <select placeholder = "Vali ala" required>
-                                    <option value="Rattasõit">Rattasõit</option>
-                                    <option value="Tennis">Tennis</option>
-                            <div class = "fields">
-                                <input type="submit" value="Submit"> 
-                            </div>  
-                        </div>
+    <div class="header">
+        <h1>Tartu Spordipäevad</h1>
+    </div>
+    <div id="navbar">
+        <a href="./index.html">Avaleht</a>
+        <a href="javascript:void(0)">Tennis</a>
+        <a href="javascript:void(0)">10km jooks</a>
+        <a href="javascript:void(0)">Kaugushüpe</a>
+        <a class= "active"href="./teineleht.html" >Registreeri</a>
+    </div>
+
+
+    <div class = "container">
+        <div class = "forms">
+            <p class="p1">Registeeru alale!</p>
+                <form action="###">
+                    <div class ="formscontent">
+                    <label for="name">Täisnimi:</label>
+                    <input type="text" id="name" placeholder="Täisnimi" required><br>
+
+                    <label for="Email">Email:</label>
+                    <input type="email" id="Email" placeholder="e-mail" required><br>
+
+                    <label for="ala">Vali ala kuhu soovid registreeruda:</label>
+                    <select name="alad" id="ala" required>
+                        <option value="tennis">Tennis</option>
+                        <option value="10km jooks">10km jooks</option>
+                        <option value="kaugushüpe">Kaugushüpe</option>
+                    </select>
+                    <input type="submit"value = "Saada avaldus">
                     </div>
-                </div>
-            </form>
-
+                </form>
         </div>
-
-
-
+    </div>
 
     </body>
+    <!--<script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+    </script>-->
 </html>
+
+
+
+
