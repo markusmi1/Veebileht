@@ -1,78 +1,141 @@
 <!DOCTYPE html>
-<html>
+<html lang="et">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Üritusteleht</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="kolmasleht stiil.css" >
-        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="kolmasleht stiil.css">
     </head>
 <body>
     <div class="header">
-        <h1>Tartu Spordipäevad</h1>
+        <h1 id="tennis">Tartu Spordipäevad</h1>
     </div>
     <div id="navbar">
-        <a href="./index.html">Avaleht</a>
-        <a class="active" href="javascript:void(0)">Tennis</a>
-        <a href="javascript:void(0)">10km jooks</a>
-        <a href="javascript:void(0)">Kaugushüpe</a>
-        <a href="./teineleht.html" >Registreeri</a>
+        <a href="./index.html" href="javascript:void(0)">Avaleht</a>
+        <a class="active" href="javascript:void(0)">Võistlused</a>
+        <div class="dropdown">
+          <button class="dropbtn" href="javascript:void(0)">Alad
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div id="dropdown-content">
+            <a href="#tennis" href="javascript:void(0)">Tennis</a>
+            <a href="#jooks" href="javascript:void(0)">Jooks</a>
+            <a href="#ratas" href="javascript:void(0)">Rattasõit</a>
+            <a href="#ujumine" href="javascript:void(0)">Ujumine</a>
+            <a href="#hüpe" href="javascript:void(0)">Kaugushüpe</a>
+          </div>
+        </div>
+        <a href="./teineleht.html" href="javascript:void(0)">Registreeri</a>
+        <a href="#kontakt">Kontaktid</a>
     </div>
 
     <div class="row esimene_rida">
-        <div class="column tennis"> 
+      <div class="column tennis"> 
+      </div>
+      <div class="column tennisparem">
+        <br>
+        <h2>Tennis</h2>
+        <div class="card ctennis">
+          <p id="jooks">Tennis on spordiala, milles võistlevad kaks mängijat (üksikmäng) 
+            või kaks võistkonda, kummaski kaks mängijat (paarismäng). 
+            Eesmärk on saata pall reketi abil väljakul vastasmängija poolele nii, 
+            et vastane ei saaks seda tõrjuda. Meie turniiril mängitakse igamehe paarismängu
+            formaadis ehk kohapeal saavad kõik paarilise. Ja mängitakse üks sett otsustava punktiga 40-40 seisult.
+          </p>
         </div>
-        <div class="column tennisparem">
-            <h2>Tennis</h2>
+      </div>
+    </div>
+    <div class="row teine_rida" >
+      <div class="column jooks2">
+        <br>
+        <br>
+        <h2>Jooks</h2>
+        <div class="card cjooks"> 
+          <p id="ratas">Jooksmine toimub Tartu linna teritooriumil, kus on kolm kontrollpunkti. 
+            Distants on 10km ja 5km peal on joogipunkti kasutamise võimalus.
+          </p> 
+        </div> 
+      </div>      
+      <div class="column jooks">
+      </div>
+    </div>
+    <div class="row kolmas_rida">
+      <div class="column ratas">
+      </div>
+      <div class="column ratasparem">
+        <br>
+        <br>
+        <h2>Rattasõit</h2>
+        <div class="card cratas">
+          <p id="ujumine">Rattasõit toimub ühisstardiga, kus läbitav distants on 63km, algus ja 
+            lõpp kesklinnas. Rajal on 5 kontrollpunkti ja nendes on võimalik ka vett saada.
+          </p>
         </div>
-        <div class="column right">
+      </div>
+    </div>
+    <div class="row neljas_rida">
+      <div class="column ujumine">
+        <br>
+        <br>
+        <h2>Ujumine</h2>
+        <div class="card cujumine">
+          <p  id="hüpe">Ujumisstiile on küll olemas mitmeid, kuid võisteldakse, vaid 
+            neljas erinevas ja neid kombineerivas kompleksis. Võistlus stiilid on: 
+            liblik-, selili-, rinnuli- ja vabaujumine. Sellel korral võisteldakse 
+            kompleksujumises ehk läbitakse 400m distants 100 meetristes vahemikes. 
+            Olenevalt osalejate arvust on voorud kust võitjad saavad edasi ning finaali 
+            pääsevad 8 parimat.
+          </p>
         </div>
-      <p>
+      </div>
+      <div class="column ujuminepilt">
+      </div>
+    </div>
+    <div class="row viies_rida">
+      <div class="column hüpepilt">
+      </div>
+      <div class="column hüpe">
         <br>
         <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-
-      </p>
-
+        <h2>Kaugushüpe</h2>
+        <div class="card chüpe">
+          <p>Kaugushüpe eesmärk on hüpata lähtepunktist võimalikult kaugele. 
+            Äratõukel ei tohi olla miski üle paku. Igal osalejal on kolm 
+            kolm katset ning kirja läheb parim. Võistlus toimub Tamme staadionil.
+          </p>
+        </div>
+      </div>
+    </div>
+     <br>
+     <br>
+     <br>
+    <div class="footer" id="kontakt">
+      <div class="row footri_rida">
+        <div class="column kontaktid">
+          <h4>Kontaktid:</h4>
+          <p>Jaan Jalgratas - tel. 51234567<br>
+            Tõnu Tennis - tel. 57654321<br>
+            Marta Maadlus - tel. 54536271
+          </p>  
+        </div>
+        <div class="column toetajad">
+          <h4>Toetajad:</h4>
+          <p>Tartu Sport<br>
+            &Atleedid&<br>
+            Ilmari Tennis
+          </p>
+        </div>
+        <div class="column social">
+          <h4>Sotsiaalmeedia:</h4>
+          <a href="https://et-ee.facebook.com/" target="_blank"><i href="#https://et-ee.facebook.com/" class="fa fa-facebook"></i></a>
+          <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+          <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>  
 <script>
     window.onscroll = function() {myFunction()};
     

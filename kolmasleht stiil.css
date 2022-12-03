@@ -1,8 +1,10 @@
+html{
+  scroll-behavior: smooth;
+}
 .header{
   background-image: url("https://media.istockphoto.com/vectors/sports-set-of-athletes-of-various-sports-disciplines-isolated-vector-vector-id1141191007?k=20&m=1141191007&s=612x612&w=0&h=CXC28y_ZRV1KvjISumj5w20bYn649HVi4yYTPWsKaZI=");
   background-size: fill;
   padding: 30px;
-  width: 1187px;
   height: 200px;
 } 
 h1{
@@ -12,17 +14,19 @@ h1{
 
 body {
   background-color: azure;
+  background-image: url("https://inspirationhut.net/wp-content/uploads/2013/05/201.png");
+  background-size: fill;
+  margin: 0;
 }
 
 #navbar {
-  overflow: hidden;
+  min-height: 48px;
   background-color: #333;
-  
 }
 
 #navbar a {
   float: left;
-  width: 17.43%;
+  width: 17.34%;
   display: block;
   color: #f2f2f2;
   text-align: center;
@@ -31,7 +35,7 @@ body {
   font-size: 17px;
 }
 
-#navbar a:hover {
+#navbar a:hover, .dropdown:hover .dropbtn{
   background-color: #ddd;
   color: black;
 }
@@ -41,12 +45,57 @@ body {
   color: white;
 }
 
+.dropdown{
+  float: left;
+  overflow: hidden;
+  width: 20.5%;
+}
+.dropdown .dropbtn{
+  font-size: 17px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  width: 100%;
+}
+#dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white; 
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+#dropdown-content a {
+  float: none;
+  color: rgb(0, 0, 0);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+#dropdown-content a:hover {
+  background-color: #ddd;
+  width: 100%;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.dropdown:hover #dropdown-content {
+  display: block;
+}
 .content {
   padding: 16px;
 }
-
+.fa-caret-down{
+  color: rgb(243, 246, 246);
+}
 .sticky {
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
 }
@@ -54,18 +103,17 @@ body {
 .sticky + .content {
   padding-top: 60px;
 }
-.row {
-  justify-content: center;
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
-.column {
-  float: left;
-  padding: 10px;
+.column{
   box-sizing: border-box;
-  height: 300px;
 }
 .esimene_rida{
-  background-size: cover;
-  border-radius: 50%;
+  margin-top: 20px;
 }
 
 .tennis{
@@ -75,7 +123,207 @@ body {
   border-radius: 50%;
   margin-left: 10px;
   margin-top: 10px;
+  float: left;
+  padding: 10px;
+  height: 300px;
 }
-
-
-
+.tennisparem{
+  width: 66%;
+  float: left;
+  padding: 10px;
+  height: 300px;
+  text-align: center;
+}
+.ctennis{
+  box-shadow: 0 5px 7px 0;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  text-align: center;
+  background-color: lightblue;
+  border-radius: 20px;
+  width: 80%;
+  margin-left: 75px;
+}
+/*.teine_rida {}*/
+.jooks2{
+  float: left;
+  width: 66%;
+  text-align: center;
+  margin-top: 30px;
+}
+/*.kolmas_rida{}*/
+.jooks{
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsg-kCj3uqSrUQADdfP7BjZph5KG6mFVeviQ&usqp=CAU");
+  width: 33%;
+  background-size: cover;
+  border-radius: 50%;
+  float: right;
+  padding-top: 0px;
+  height: 300px;
+  margin-top: 50px;
+}
+.cjooks{
+  box-shadow: 0 5px 7px 0;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  text-align: center;
+  background-color: lightblue;
+  border-radius: 20px;
+  width: 80%;
+  margin-left: 75px;
+}
+.ratas{
+  background-image: url("https://www.eventbrite.com/blog/wp-content/uploads/2022/04/cycling-competitioncyclist-athletes-riding-a-race-picture-id899090514.jpg");
+  width: 33%;
+  background-size: cover;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-top: 10px;
+  float: left;
+  padding: 10px;
+  height: 300px;
+}
+.ratasparem{
+  width: 66%;
+  float: left;
+  padding: 10px;
+  height: 300px;
+  text-align: center;
+}
+.cratas{
+  box-shadow: 0 5px 7px 0;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  text-align: center;
+  background-color: lightblue;
+  border-radius: 20px;
+  width: 80%;
+  margin-left: 75px;
+}
+.ujuminepilt{
+  background-image: url("https://www.dayssports.us/wp-content/uploads/2020/02/photo-1560090995-01632a28895b.jpg");
+  width: 33%;
+  background-size: cover;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-top: 30px;
+  float: left;
+  padding: 10px;
+  height: 300px;
+}
+.ujumine{
+  width: 66%;
+  float: left;
+  padding: 10px;
+  height: 300px;
+  text-align: center;
+}
+.cujumine{
+  box-shadow: 0 5px 7px 0;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  text-align: center;
+  background-color: lightblue;
+  border-radius: 20px;
+  width: 80%;
+  margin-left: 75px;
+}
+.hüpepilt{
+  background-image: url("https://athleticsweekly.com/wp-content/uploads/2021/04/Long-jump-adobe-stock.jpg");
+  width: 33%;
+  background-size: cover;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-top: 30px;
+  float: left;
+  padding: 10px;
+  height: 300px;
+}
+.hüpe{
+  width: 66%;
+  float: left;
+  padding: 10px;
+  height: 300px;
+  text-align: center;
+}
+.chüpe{
+  box-shadow: 0 5px 7px 0;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  text-align: center;
+  background-color: lightblue;
+  border-radius: 20px;
+  width: 80%;
+  margin-left: 75px;
+}
+.footer {
+  background-image: url("https://wallpaperset.com/w/full/1/9/f/248924.jpg");
+  background-size: cover;
+  color: #333;
+  height: 150px;
+  position: inherit;
+}
+.kontaktid{
+  width: 33%;
+  text-align: center;
+  padding-top: 1px;
+  float: left;
+}
+.toetajad{
+  width: 34%;
+  text-align: center;
+  padding-top: 1px;
+  float: left;
+}
+.social{
+  width: 33%;
+  text-align: center;
+  padding-top: 1px;
+  float: left;
+  margin-top: 1px;
+}
+.fa:hover{
+  opacity: 0.7;
+}
+.fa-facebook{
+  background: #3B5998;
+  color: white;
+  padding: 20px;
+  font-size: 15px;
+  width: 15px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+}
+.fa-twitter{
+  background: #55ACEE;
+  color: white;
+  padding: 20px;
+  font-size: 15px;
+  width: 15px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fa-instagram{
+  background: #125688;
+  color: white;
+  padding: 20px;
+  font-size: 15px;
+  width: 15px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
