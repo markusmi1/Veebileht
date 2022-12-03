@@ -7,7 +7,6 @@ body {
   background-color: azure;
   background-image: url("https://inspirationhut.net/wp-content/uploads/2013/05/201.png");
   background-size: fill;
-  margin: 0;
 }
 
 .row:after {
