@@ -15,11 +15,12 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
-
+                      <!--MAIN BODY-->
     <body>
     <div class="header">
         <h1>Tartu Spordipäevad</h1>
     </div>
+
 
     <!-- navbar-->
     <div id="navbar">
@@ -37,10 +38,9 @@
             <a href="#hüpe">Kaugushüpe</a>
           </div>
         </div>
-        <a class="active" href="javascript:void(0)">Registreeri</a>
+        <a class="active" href="javascript:void(0)">Registreeri</a>      <!--Pilt-->
         <a href="#kontakt">Kontaktid</a>
     </div>
-
 
 
     <!-- registreerimisvorm-->
@@ -51,13 +51,13 @@
                     <div class ="formscontent">
                     <p class="p1">Registeeru alale!</p>
                     <label for="name">Täisnimi:</label>
-                    <input type="text" name="name" placeholder="Täisnimi" required><br>
+                    <input type="text" name="name" placeholder="Täisnimi" id="name" required><br>
 
-                    <label for="Email">Email:</label>
-                    <input type="email" name="email" placeholder="e-mail" required><br>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" placeholder="e-mail" id="email" required><br>
 
-                    <label for="Alad">Vali ala kuhu soovid registreeruda:</label>
-                    <select name="alad" name="Alad" required size="1">
+                    <label for="alad">Vali ala kuhu soovid registreeruda:</label>
+                    <select name="alad"  required size="1" id="alad" >
                         <option value="tennis">Tennis</option>
                         <option value="10km jooks">10km jooks</option>
                         <option value="kaugushüpe">Kaugushüpe</option>
@@ -67,6 +67,7 @@
                 </form>
         </div>
     </div>
+
 
     <!-- footer-->
     <div class="footer" id="kontakt">
@@ -93,25 +94,12 @@
           </div>
         </div>
       </div>
-
+      <script src="üldjava.js"></script>
     </body>
 
-    <!--Navbar kontroll-->
-    <script>
-    window.onscroll = function() {myFunction()};
 
-    var navbar = document.getElementById("navbar");
-    var sticky = navbar.offsetTop;
-
-    function myFunction() {
-        if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-        } else {
-        navbar.classList.remove("sticky");
-        }
-    }
-    </script>
     <!--Popup peale kirja saatmist-->
+    
     <script>
       function notification(){
         alert("Registreerumine õnnestus!"); 
