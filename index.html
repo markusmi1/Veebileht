@@ -4,15 +4,44 @@
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="./index stiil.css"/>
+	<link rel="stylesheet" href="üldstiil.css">
 	<title>Tartu spordipäev 2022</title>
 
 </head>
 <body>
+	<div class="header">
+        <h1>Tartu Spordipäevad</h1>
+    </div>
+	<!-- navbar-->
+	<div id="navbar">
+        <a href="./index.html">Avaleht</a>
+        <a href="./kolmasleht.html">Võistlused</a>
+        <div class="dropdown">
+          <button class="dropbtn">Alad
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div id="dropdown-content">
+            <a href="#tennis">Tennis</a>
+            <a href="#jooks">Jooks</a>
+            <a href="#ratas">Rattasõit</a>
+            <a href="#ujumine">Ujumine</a>
+            <a href="#hüpe">Kaugushüpe</a>
+          </div>
+        </div>
+        <a class="active" href="./teineleht.html">Registreeri</a>
+        <a href="#kontakt">Kontaktid</a>
+    </div>
+	<!--<div id="navbar">
+        <a href="./index.html">Avaleht</a>
+        <a href="javascript:void(0)">Tennis</a>
+        <a href="javascript:void(0)">10km jooks</a>
+        <a href="javascript:void(0)">Kaugushüpe</a>
+        <a class= "active"href="./teineleht.html" >Registreeri</a>
+    </div>  -->
 	<div class="sisu">
 
-	<h1>TARTU SPORDIPÄEV <span class="värviline"><div id="aasta"></div></span> </h1>
+	<h1><span class="värviline"><div id="aasta"></div></span> </h1>
 	<p>Terves kehas terve vaim. <i>Mens sana in corpore sano</i>.</p>
-	<h2>Registreeri <a href="./teineleht.html" target="_blank">siin</a> </h2>
 	<br />
 	<img src="./Mens-sana-in-corpore-sano-pilt.png" alt="Mens sana in corpore sano"/>
     
@@ -25,16 +54,34 @@
     <p>Üritused toimuvad Tartu kesklinnas terve päeva jooksul. </p>
     <h2>Millal?</h2>
     <p>Spordipäev leiab aset novembri viimasel laupäeval.</p>
-	<h2>Spordialade tutvustusi vaata <a href="./kolmasleht.html" > siit</a></h2>
-	<div class="kontaktid">
-		<h3 class = "pealkiri">Kontaktid:</h3>
-		<br />
-		<ul class="numbrid">
-			<li>Jaan Jalgratas - tel. 51234567</li>
-			<li>Tõnu Tennis - tel. 57654321</li>
-			<li>Marta Maadlus - tel. 54536271</li>
-		</ul>
 	</div>
+
+
+	<!-- footer-->
+    <div class="footer" id="kontakt">
+        <div class="row footri_rida">
+          <div class="column kontaktid">
+            <h4>Kontaktid:</h4>
+            <p>Jaan Jalgratas - tel. 51234567<br>
+              Tõnu Tennis - tel. 57654321<br>
+              Marta Maadlus - tel. 54536271
+            </p>  
+          </div>
+          <div class="column toetajad">
+            <h4>Toetajad:</h4>
+            <p>Tartu Sport<br>
+              &Atleedid&<br>
+              Ilmari Tennis
+            </p>
+          </div>
+          <div class="column social">
+            <h4>Sotsiaalmeedia:</h4>
+            <a href="https://et-ee.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
     <br />
 
     
@@ -43,6 +90,20 @@
   
 		document.getElementById('aasta').innerHTML = see_aasta;
 	</script>
-	</div>
+	<script>
+		window.onscroll = function() {myFunction()};
+		
+		var navbar = document.getElementById("navbar");
+		var sticky = navbar.offsetTop;
+		
+		function myFunction() {
+			if (window.pageYOffset >= sticky) {
+			navbar.classList.add("sticky")
+			} else {
+			navbar.classList.remove("sticky");
+			}
+		}
+	</script>
+
 </body>
 </html>

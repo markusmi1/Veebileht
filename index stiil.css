@@ -1,5 +1,6 @@
 body{
     background-color: #e9f419;
+    background-image: url("https://betotrade.ee/wp-content/uploads/2022/06/Delta_majanduskonverents-1200x800-1.jpeg");
     font-family: 'Arial', Arial, Verdana, Helvetica, sans-serif;
 }
 .sisu{
@@ -7,18 +8,22 @@ body{
 }
 p{
     text-align: center;
+    color: aliceblue;
     font-size: large;
 }
 h1{
     text-align: center;
+    color: aliceblue;
     font-size: xx-large;
 }
 .värviline{
     font-weight: absolute;
     color: #85110b;
+    font-size: 250%;
 }
 h2{
     text-align: center;
+    color: aliceblue;
     font-size: x-large;
     font-weight: absolute;
 }
@@ -29,19 +34,8 @@ img{
     width: auto;
     padding: 10px;
 }
-div.kontaktid {
+h4{
     text-align: center;
-}
-h3.pealkiri{
-    display: inline-block;
-    text-align: center;
-    font-size: medium;
-    margin-bottom: 10px;
-}
-ul.numbrid{
-    list-style: none;
-    display: inline-block;
-    text-align: center;
-    font-size: small;
-    margin-bottom: 10px;
+    color: black;
+    font-size: larger;
 }
