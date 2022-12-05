@@ -1,4 +1,1 @@
-# Veebileht
-Projektiks on veebileht "Tartu spordipäevad". Lehel on kolm lehte: index, "alad" ja "registreerumine".
-- Stiil: teadmata
--JS kasutus: Registreerumislehel täites vormi saadab emailile kinnituskirja
+Tegime ühe pealehe ja kahe vahelehega veebilehe, kus kirjeldame enda poolt välja mõeldud üritust: "Tartu spordipäevad". Olemas on üks üldine CSS fail, kus on navigatsiooniriba ja footer, ning lisaks on eraldi CSS igal lehel. Teisel lehel JS + PHP fail ja ülejäänud kahel lehel on üks JS fail. Tiimiliikmed olid: Toomas Vellet, Robin Mürk ja Markus Michelis. Tööjaotus oli järgnev: Markus tegi footer+navbar,dropdown+kolmasleht+üldstiil+üldjava, Robin tegi teineleht+PHP+üldstiil+kordineeris tiimi koostööd, Toomas tegi index lehe.
