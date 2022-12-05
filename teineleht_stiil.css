@@ -1,60 +1,75 @@
-
-
-/*body{
-background-color: azure;
-background-image: url("https://inspirationhut.net/wp-content/uploads/2013/05/201.png");
-background-size: fill;
-}*/
-
 .header{
     background-image: url("https://media.istockphoto.com/vectors/sports-set-of-athletes-of-various-sports-disciplines-isolated-vector-vector-id1141191007?k=20&m=1141191007&s=612x612&w=0&h=CXC28y_ZRV1KvjISumj5w20bYn649HVi4yYTPWsKaZI=");
     background-size: fill;
     padding: 30px;
-    width: 1187px;
     height: 200px;
     margin: auto;
 }
 
+.container .picture{
+    float: right;
+    position: relative;
+    bottom: 2vw;
+    margin-right: 3vw;
+    margin-left: 3vw;
+    margin-top: 3vw;
+}
 .container{
-    align-items: center;   /* vaja katsetada */
     max-width: 100%;
     height: 100%;
-    /*border: 3px solid #73AD21;*/
+}
+.container .forms{
+    display: inline-block;
+    padding: 1vw;
 
 }
-
 .container .forms .p1{
     text-align: center;
-    max-width: 300px;
-    border: 1px solid black;
+    max-width: fit-content;
+    
     margin-bottom: 30px;
-    background-color: rgb(102, 141, 141);
+    margin-left: 1vw;
+    color: #333;
     border-radius: 5px;
     font-size: 30px;
 }
 .container .formscontent{
-    background-color: rgb(89, 147, 198,0.4);
+    background-color: white;
     position: relative;
-    margin-left: 100px;
-    border: 3px solid green;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    margin-left: 2vw;
+    border-radius: 15px;
     text-align: center;
     max-width: 50vw;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 5px;
+
 }
 
 .container .formscontent input,select,option{
     border-radius: 5px;
+    border: gray solid 1px;
     display: block;
-    margin: auto;
-    padding: 12px 20px;
+    padding: 10px;
+    margin-left: 1vw;
+    margin-bottom: 1vw;
+    
 
 }
 .container .formscontent label{
-    border: 1px solid black;
+    display: block;
     border-radius: 5px;
-    background-color: rgb(102, 141, 141);
+    text-align: left;
+    max-width: fit-content;
+    margin-left: 1vw;
+    margin-bottom: 1vw;
+    margin-right: 1vw;
+    color: #333;
     font-weight: 500;
     font-size: 25px;
-    margin-top: 5px;
+    padding: 2px;
+    
 
 
 }
