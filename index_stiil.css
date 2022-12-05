@@ -5,6 +5,7 @@ body{
 .sisu{
     padding: 10px 10px;
 }
+
 p{
     text-align: center;
     color: aliceblue;
@@ -12,13 +13,14 @@ p{
 }
 h1{
     text-align: center;
-    color: aliceblue;
+    color: rgb(4, 4, 4);
     font-size: xx-large;
 }
 .värviline{
     font-weight: absolute;
     color: #85110b;
     font-size: 250%;
+    margin-left: 560px;
 }
 h2{
     text-align: center;
