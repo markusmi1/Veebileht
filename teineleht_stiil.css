@@ -6,6 +6,11 @@
     margin: auto;
 }
 
+.container{
+    max-width: 100%;
+    height: 100%;
+}
+
 .container .picture{
     z-index: -1;
     float: right;
@@ -15,15 +20,12 @@
     margin-left: 3vw;
     margin-top: 3vw;
 }
-.container{
-    max-width: 100%;
-    height: 100%;
-}
-.container .forms{
+
+    .container .forms{
     display: inline-block;
     padding: 1vw;
-
 }
+
 .container .forms .p1{
     text-align: center;
     max-width: fit-content;
@@ -45,7 +47,6 @@
     max-width: 50vw;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 5px;
-
 }
 
 .container .formscontent input,select,option{
@@ -55,9 +56,8 @@
     padding: 10px;
     margin-left: 1vw;
     margin-bottom: 1vw;
-    
-
 }
+
 .container .formscontent label{
     display: block;
     border-radius: 5px;
@@ -70,13 +70,12 @@
     font-weight: 500;
     font-size: 25px;
     padding: 2px;
-    
-
-
 }
+
 .container .formscontent input[type=submit]{
     margin-top: 10px;
 }
+
 .container .formscontent input:hover, select:hover, option:hover{
     background-color: #ddd;
     color: black;
