@@ -24,6 +24,7 @@
     .container .forms{
     display: inline-block;
     padding: 1vw;
+    z-index: -1;
 }
 
 .container .forms .p1{
@@ -35,6 +36,7 @@
     color: #333;
     border-radius: 5px;
     font-size: 30px;
+    z-index: -1;
 }
 .container .formscontent{
     background-color: white;
@@ -47,6 +49,7 @@
     max-width: 50vw;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 5px;
+    z-index: -1;
 }
 
 .container .formscontent input,select,option{
