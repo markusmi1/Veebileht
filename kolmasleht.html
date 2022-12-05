@@ -11,22 +11,23 @@
         <link rel="stylesheet" href="üldstiil.css">
     </head>
 <body>
+  <button onclick="topFunction()" id="nupp" title="Go to top">Top</button>
     <div class="header">
-        <h1 id="tennis">Tartu Spordipäevad</h1>
+        <a href="./index.html"><h1 id="tennis">Tartu Spordipäevad</h1></a>
     </div>
     <div id="navbar">
         <a href="./index.html">Avaleht</a>
-        <a class="active" href="javascript:void(0)">Võistlused</a>
+        <a class="active" >Võistlused</a>
         <div class="dropdown">
           <button class="dropbtn">Alad
             <i class="fa fa-caret-down"></i>
           </button>
           <div id="dropdown-content">
             <a href="#tennis">Tennis</a>
-            <a href="#jooks" >Jooks</a>
+            <a href="#jooks">Jooks</a>
             <a href="#ratas">Rattasõit</a>
-            <a href="#ujumine" >Ujumine</a>
-            <a href="#hüpe" >Kaugushüpe</a>
+            <a href="#ujumine">Ujumine</a>
+            <a href="#hüpe">Kaugushüpe</a>
           </div>
         </div>
         <a href="./teineleht.html">Registreeri</a>
@@ -137,19 +138,7 @@
         </div>
       </div>
     </div>  
-<script>
-  window.onscroll = function() {myFunction()};
+  <script src="üldjava.js"></script>
   
-  var navbar = document.getElementById("navbar");
-  var sticky = navbar.offsetTop;
-  
-  function myFunction() {
-    if (window.pageYOffset >= sticky) {
-      navbar.classList.add("sticky")
-    } else {
-      navbar.classList.remove("sticky");
-    }
-  }
-</script>
 </body>
 </html>
