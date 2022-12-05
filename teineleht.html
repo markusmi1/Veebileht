@@ -8,6 +8,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+      <!--Stiili viited-->
         <link rel="stylesheet" href="teineleht_stiil.css">
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
         <link rel="stylesheet" href="üldstiil.css">
@@ -36,39 +37,31 @@
             <a href="#hüpe">Kaugushüpe</a>
           </div>
         </div>
-        <a class="active" href="./teineleht.html">Registreeri</a>
+        <a class="active" href="javascript:void(0)">Registreeri</a>
         <a href="#kontakt">Kontaktid</a>
     </div>
 
 
 
-   <!--<div id="navbar">
-        <a href="./index.html">Avaleht</a>
-        <a href="javascript:void(0)">Tennis</a>
-        <a href="javascript:void(0)">10km jooks</a>
-        <a href="javascript:void(0)">Kaugushüpe</a>
-        <a class= "active"href="./teineleht.html" >Registreeri</a>
-    </div>  -->
-
     <!-- registreerimisvorm-->
     <div class = "container">
         <div class = "forms">
             <p class="p1">Registeeru alale!</p>
-                <form action="###">
+                <form action="send2.php" method="post">             <!--.php töötab ainult kui LOCALHOSTi alt on pandud leht tööle-->
                     <div class ="formscontent">
                     <label for="name">Täisnimi:</label>
-                    <input type="text" id="name" placeholder="Täisnimi" required><br>
+                    <input type="text" name="name" placeholder="Täisnimi" required><br>
 
                     <label for="Email">Email:</label>
-                    <input type="email" id="Email" placeholder="e-mail" required><br>
+                    <input type="email" name="email" placeholder="e-mail" required><br>
 
-                    <label for="ala">Vali ala kuhu soovid registreeruda:</label>
-                    <select name="alad" id="ala" required size="3">
+                    <label for="Alad">Vali ala kuhu soovid registreeruda:</label>
+                    <select name="alad" name="Alad" required size="1">
                         <option value="tennis">Tennis</option>
                         <option value="10km jooks">10km jooks</option>
                         <option value="kaugushüpe">Kaugushüpe</option>
                     </select>
-                    <input type="submit" value = "Saada avaldus">
+                    <input type="submit" value = "Saada avaldus" onclick="notification()">
                     </div>
                 </form>
         </div>
@@ -102,7 +95,7 @@
 
     </body>
 
-
+    <!--Navbar kontroll-->
     <script>
     window.onscroll = function() {myFunction()};
 
@@ -116,6 +109,12 @@
         navbar.classList.remove("sticky");
         }
     }
+    </script>
+    <!--Popup peale kirja saatmist-->
+    <script>
+      function notification(){
+        alert("Registreerumine õnnestus!"); 
+      }
     </script>
 </html>
 
