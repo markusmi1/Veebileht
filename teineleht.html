@@ -23,7 +23,7 @@
 
 
     <!-- navbar-->
-    <div id="navbar">
+    <div id="navbar"style="z-index: 2;">
         <a href="./index.html">Avaleht</a>
         <a href="./kolmasleht.html">Võistlused</a>
         <div class="dropdown">
@@ -47,22 +47,24 @@
     <div class = "container">
       <img class="picture" src="https://www.marathonsandmotivation.com/wp-content/uploads/2020/03/bigstock-Marathon-Running-Race-People-263664817.jpg" alt="">
         <div class = "forms">
-                <form action="send2.php" method="post">             <!--.php töötab ainult kui LOCALHOSTi alt on pandud leht tööle-->
+                <form action="send2.php" method="post">             <!--.php töötab ainult kui LOCALHOSTi või web serveri alt on pandud leht tööle-->
                     <div class ="formscontent">
-                    <p class="p1">Registeeru alale!</p>
-                    <label for="name">Täisnimi:</label>
-                    <input type="text" name="name" placeholder="Täisnimi" id="name" required><br>
+                        <p class="p1">Registeeru alale!</p>
+                        <label for="name">Täisnimi:</label>
+                        <input type="text"name="name" placeholder="Täisnimi" id="name"><br>
 
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" placeholder="e-mail" id="email" required><br>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" placeholder="e-mail" id="email" required><br>
 
-                    <label for="alad">Vali ala kuhu soovid registreeruda:</label>
-                    <select name="alad"  required size="3" id="alad" >
-                        <option value="tennis">Tennis</option>
-                        <option value="10km jooks">10km jooks</option>
-                        <option value="kaugushüpe">Kaugushüpe</option>
-                    </select>
-                    <input type="submit" value = "Saada avaldus" onclick="notification()">
+                        <label for="alad">Vali ala kuhu soovid registreeruda:</label>
+                        <select name="alad"  required size="5" id="alad" >
+                            <option value="tennis">Tennis</option>
+                            <option value="jooks">jooks</option>
+                            <option value="rattasõit">rattasõit</option>
+                            <option value="ujumine">ujumine</option>
+                            <option value="kaugushüpe">Kaugushüpe</option>
+                        </select>
+                        <input type="submit" value = "Saada avaldus" onclick="notification()">
                     </div>
                 </form>
         </div>
@@ -94,18 +96,13 @@
           </div>
         </div>
       </div>
+
       <!--navbari kleepumise skript-->
       <script src="üldjava.js"></script>
+
           <!--Popup peale kirja saatmist-->
-      <script>
-        function notification(){
-          alert("Registreerumine õnnestus!"); 
-        }
-      </script>
+      <script type="text/javascript" src="teinelehtJS.js"></script>
     </body>
-
-
-
 </html>
 
 

@@ -18,7 +18,7 @@
     bottom: 2vw;
     margin-right: 3vw;
     margin-left: 3vw;
-    margin-top: 3vw;
+    margin-top: 6vw;
 }
 
     .container .forms{
@@ -30,7 +30,6 @@
 .container .forms .p1{
     text-align: center;
     max-width: fit-content;
-    
     margin-bottom: 30px;
     margin-left: 1vw;
     color: #333;
@@ -49,7 +48,7 @@
     max-width: 50vw;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 5px;
-    z-index: -1;
+    z-index: 0;
 }
 
 .container .formscontent input,select,option{

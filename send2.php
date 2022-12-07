@@ -1,54 +1,50 @@
 <?php
-        // Töötab ainult LOCALHOSTis
+        // Töötab ainult LOCALHOSTis või web serveris
         //Autor: https://github.com/PHPMailer/PHPMailer
 
         
-        // Define variables
+        // muutujad
         $name = $_POST['name'];
         $email = $_POST['email'];
-        //$subject = $_POST['subject'];
-        //$message = $_POST['message'];
         $ala = $_POST['alad'];
 
-        //Import PHPMailer classes into the global namespace
-        //These must be at the top of your script, not inside a function
+        //Võtab vajalikud PHPMaileri klassid
         use PHPMailer\PHPMailer\PHPMailer;
         use PHPMailer\PHPMailer\SMTP;
         use PHPMailer\PHPMailer\Exception;
 
-        //Load Composer's autoloader
         require "vendor/SMTP/SMTP.php";
         require "vendor/SMTP/PHPMailer.php";
         require "vendor/SMTP/Exception.php";
 
-        //Create an instance; passing `true` enables exceptions
+        //Loob uue objekti, "true väärtus lubab erandeid"
         $mail = new PHPMailer(true);
 
         try {
-            //Server settings
-            //$mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
-            $mail->isSMTP();                                            //Send using SMTP
-            $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
-            $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-            $mail->Username   = 'koiksonjaanus.confirm@gmail.com';                     //SMTP username
-            $mail->Password   = 'oegtifxzmfhgmhvg';                               //SMTP password
-            $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
-            $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+            //Serveri seaded
+            //$mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //DEBUG mood
+            $mail->isSMTP();                                            //Kasutab SMTP protokolli
+            $mail->Host       = 'smtp.gmail.com';                     //mis domeeni kasutab ".gmail"
+            $mail->SMTPAuth   = true;                                   //Lubab SMTP autentimise    ????
+            $mail->Username   = 'koiksonjaanus.confirm@gmail.com';                     //SMTP kasutajanimi   "kasutajanimi ja parool on gmaili omad mille alt saadab"
+            $mail->Password   = 'oegtifxzmfhgmhvg';                               //SMTP parool
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Mis šifreeringut kasutab
+            $mail->Port       = 465;                                    //Mis TCP porti kasutab
 
             //Recipients
             $mail->setFrom('koiksonjaanus.confirm@gmail.com');
-            $mail->addAddress($email);                                  //Add a recipient
+            $mail->addAddress($email);                                  //Sõnumi saaja
 
             //Content
-            $mail->isHTML(true);                                  //Set email format to HTML
+            $mail->isHTML(true);                                  //Seab emaili sisu HTML vormi (saad kirja vormindada HTML syntaxi kasutades)
             $mail->Subject = 'Registreerimise kinnitus';
             $mail->Body    = 'Tere ' . $nimi . '. Olete registreerinud ennast alale' . $ala . '. Oma reserveeringu tühistamiseks võtke ühendust korraldajatega. Täpsema info leiate meie veebilehelt';
 
 
             $mail->send();
-            //echo 'Message has been sent';
+            //Sõnumi saates värskendab lehe
             header('Location:teineleht.html');
         } catch (Exception $e) {
-            //echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+            //echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";       //kui meili saatmine ebaõnnestus siis kuvab errori teate.
         }
         ?>
